@@ -1,1 +1,7 @@
-document.write('JS PWA TEST');
+window.onload = () => {
+    'use strict';
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('./sw.js');
+    }
+}
